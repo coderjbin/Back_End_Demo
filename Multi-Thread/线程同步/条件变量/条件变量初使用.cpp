@@ -2,7 +2,7 @@
 #include <pthread.h>
 #include <unistd.h>
 using namespace std;
-
+/* 示例代码位于p321 */
 pthread_cond_t qready = PTHREAD_COND_INITIALIZER;
 pthread_mutex_t qlock = PTHREAD_MUTEX_INITIALIZER;
 
