@@ -2,7 +2,7 @@
 #include <pthread.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define THREADNUM 5
+#define THREADNUM 50
 pthread_rwlock_t rwlock;
 
 void *readers(void* arg) {
