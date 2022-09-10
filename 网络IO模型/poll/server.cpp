@@ -96,7 +96,7 @@ void do_poll(int listenfd) {
             }
             /* 将新的描述符添加到读描述符集合中 */
             clientfds[i].events = POLLIN;
-            /* 记录客户连接套接字的个数 */
+            /* 记录客户连接套接字的最大文件描述符 */
             maxi = (i > maxi ? i : maxi);
             if(--nready <= 0) {
                 continue;
